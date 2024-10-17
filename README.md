@@ -1,1 +1,3 @@
 # etch-a-sketch
+
+This project showcases my ability to build interactive, user-friendly web applications using JavaScript, HTML, and CSS. I created a dynamic, browser-based sketchpad that allows users to draw by hovering over a grid of squares, with the ability to customize the grid size and introduce features like randomized colors and progressive shading. This project highlights my proficiency in DOM manipulation, Flexbox layout, and event handling, as well as my problem-solving skills in implementing responsive, intuitive interfaces. It demonstrates both technical expertise and creativity in enhancing user interaction.
