@@ -1,0 +1,22 @@
+*{
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    border: solid blue;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: dotted red;
+    padding: 100px;
+    margin: 300px;
+ 
+}
+
