@@ -18,17 +18,17 @@ const container2 = document.querySelector(".container2")
 const start = 16;
 //Start with a 16x16 grid
 for(var i = 0; i < start; i++){
-    const row = document.createElement("div");
-    row.className = "row";
+    const column = document.createElement("div");
+    column.className = "column";
 
 for(var j = 0; j < start; j++){
     const box = document.createElement("div");
     box.className = "box";
     box.style.border = "1px solid black";
     box.style.flex = `1 1 ${50 / start + `%`}`;
-    row.appendChild(box);
+    column.appendChild(box);
   }; 
-  container2.appendChild(row);
+  container2.appendChild(column);
 };
 
 //Function that prompts user to choose a number to create their grid size
@@ -37,17 +37,17 @@ function createGrid(){
     if(num <= 100 && num >0){
         container2.innerHTML = ""; 
         for(var i = 0; i < num; i++){
-            const row = document.createElement("div");
-            row.className = "row";
+            const column = document.createElement("div");
+            column.className = "column";
 
         for(var j = 0; j < num; j++){
             const box = document.createElement("div");
             box.className = "box";
             box.style.border = "1px solid black";
             box.style.flex = `1 1 ${50 / num + `%`}`;
-            row.appendChild(box);
+            column.appendChild(box);
         }; 
-        container2.appendChild(row);
+        container2.appendChild(column);
       };
     }
     else{
@@ -56,15 +56,9 @@ function createGrid(){
   };
 };
 
-sizeBtn.addEventListener("click", () =>{
-    createGrid();
-})
+function chooseColor(){
 
-resetBtn.addEventListener("click", () =>{
-    document.querySelectorAll(".box").forEach(element =>{
-        element.style.backgroundColor = "";
-    });  
-});
+};
 
 container2.addEventListener("click", () => {
     document.querySelectorAll(".box").forEach(element => {
@@ -79,3 +73,16 @@ container2.addEventListener("click", () => {
     });
 });
 
+sizeBtn.addEventListener("click", () => {
+    createGrid();
+});
+
+resetBtn.addEventListener("click", () => {
+    document.querySelectorAll(".box").forEach(element =>{
+        element.style.backgroundColor = "";
+    });  
+});
+
+colorBtn.addEventListener("click", () => {
+
+});

@@ -53,7 +53,7 @@ h1{
     margin-bottom: -100px;
 }
 
-.row{
+.column{
     display: flex;
     flex-direction: column;
     flex: 1;
