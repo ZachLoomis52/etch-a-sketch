@@ -57,21 +57,54 @@ function createGrid(){
 };
 
 function chooseColor(){
-
-};
-
-container2.addEventListener("click", () => {
-    document.querySelectorAll(".box").forEach(element => {
-        element.addEventListener("mousemove", () => {
-            element.style.backgroundColor = "red";
-        });
-        container2.addEventListener("dblclick", () =>{
+    let Color = prompt("Choose: Red, Black, Orange, Purple, Green, Blue, White, Yellow.");
+    let color = Color.toLowerCase();
+    
+    switch (color) {
+            case "red":
+            color = "red";
+        break;
+            case "black":
+            color = "black";
+        break;
+            case "orange":
+            color = "orange";
+        break;
+            case "purple":
+            color = "purple";
+        break;
+            case "green":
+            color = "green";
+        break;
+            case "blue":
+            color = "blue";
+            break;
+        case "white":
+            color = "white";
+            break;
+        case "yellow":
+            color = "yellow";
+            break;
+        default:
+            alert("Choose 1 of the given options!!!")
+            return;
+    } 
+    container2.addEventListener("click", () => {
+        document.querySelectorAll(".box").forEach(element => {
             element.addEventListener("mousemove", () => {
-                element.style.backgroundColor = "";
-            })
+                element.style.backgroundColor = color;
+            });
+            container2.addEventListener("dblclick", () =>{
+                element.addEventListener("mousemove", () => {
+                    element.style.backgroundColor = "";
+                })
+            });
         });
     });
-});
+     
+};
+
+
 
 sizeBtn.addEventListener("click", () => {
     createGrid();
@@ -84,5 +117,5 @@ resetBtn.addEventListener("click", () => {
 });
 
 colorBtn.addEventListener("click", () => {
-
+    chooseColor();
 });
