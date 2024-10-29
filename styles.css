@@ -3,6 +3,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(236, 192, 141);
 }
 
 .body1{
@@ -22,7 +23,7 @@ body{
 .container2{
     display: flex;
     justify-content: center;
-    border: 5px solid black;
+    border: 5px solid rgb(75, 41, 4);
     padding: 0;
     margin-right: 50px;
     width: 960px;
@@ -30,7 +31,7 @@ body{
 }
 
 .box{
-    background-color: #ddd;
+    background-color: #cc7716a9;
     text-align: center;
     box-sizing: border-box;
     padding: 0;
@@ -43,7 +44,9 @@ body{
     border-radius: 10px;
     font-size: 25px;
     font-weight: bold;
-    border: 2px solid black;
+    border: 2px solid rgb(75, 41, 4);
+    color: rgb(75, 41, 4);
+    background-color: #cc7716a9;
     padding: 15px;
 }
 
@@ -51,6 +54,7 @@ h1{
     font-size: 40px;
     margin-left: 150px;
     margin-bottom: -100px;
+    color: rgb(75, 41, 4);
 }
 
 .column{

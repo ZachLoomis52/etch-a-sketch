@@ -24,7 +24,7 @@ for(var i = 0; i < start; i++){
 for(var j = 0; j < start; j++){
     const box = document.createElement("div");
     box.className = "box";
-    box.style.border = "1px solid black";
+    box.style.border = "1px solid rgb(75, 41, 4)";
     box.style.flex = `1 1 ${50 / start + `%`}`;
     column.appendChild(box);
   }; 
@@ -59,7 +59,7 @@ function createGrid(){
 function chooseColor(){
     let Color = prompt("Choose: Red, Black, Orange, Purple, Green, Blue, White, Yellow.");
     let color = Color.toLowerCase();
-    
+
     switch (color) {
             case "red":
             color = "red";
@@ -104,7 +104,18 @@ function chooseColor(){
      
 };
 
-
+container2.addEventListener("click", () => {
+        document.querySelectorAll(".box").forEach(element => {
+            element.addEventListener("mousemove", () => {
+                element.style.backgroundColor = "black";
+            });
+            container2.addEventListener("dblclick", () =>{
+                element.addEventListener("mousemove", () => {
+                    element.style.backgroundColor = "";
+                })
+            });
+        });
+    });
 
 sizeBtn.addEventListener("click", () => {
     createGrid();
