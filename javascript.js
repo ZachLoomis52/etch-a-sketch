@@ -130,3 +130,12 @@ resetBtn.addEventListener("click", () => {
 colorBtn.addEventListener("click", () => {
     chooseColor();
 });
+
+container2.addEventListener("click", () => {
+    container2.style.cursor = "url(https://cdn-icons-png.flaticon.com/128/2280/2280532.png) 5 110, auto";
+
+});
+
+container2.addEventListener("dblclick", () => {
+    container2.style.cursor ="url(https://cdn-icons-png.flaticon.com/128/335/335581.png) 25 100, auto";
+});
